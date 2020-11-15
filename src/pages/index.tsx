@@ -17,6 +17,7 @@ export default function Home() {
             <Field name='firstName' component={TextField} label='First Name' />
             <Field name='lastName' component={TextField} label='Last Name' />
             <Field name='millionaire' type='checkbox' component={CheckboxWithLabel} Label={{label: 'I am a millionaire'}} />
+            <Field name='money' type='number' component={TextField} label='Money' />
           </Form>
         </Formik>
       </CardContent>
