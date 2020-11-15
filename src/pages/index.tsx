@@ -6,7 +6,7 @@ export default function Home() {
       <CardContent>
         <Formik>
           <Form>
-            <Field></Field>
+            <Field name='firstName' component={TextField} label='First Name' />
           </Form>
         </Formik>
       </CardContent>
