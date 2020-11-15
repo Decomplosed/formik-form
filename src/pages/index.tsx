@@ -11,7 +11,8 @@ export default function Home() {
           validationSchema={object({
             money: mixed().when('millionaire', {
               is: true,
-              then: number().required().min(1000000)
+              then: number().required().min(1_000_000),
+              otherwise: number().required()
             })
           })}
           initialValues={{
