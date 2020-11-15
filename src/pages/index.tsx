@@ -4,6 +4,9 @@ export default function Home() {
   return (
     <Card>
       <CardContent>
+        <Formik>
+          
+        </Formik>
       </CardContent>
     </Card>
   );
