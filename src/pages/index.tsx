@@ -6,7 +6,13 @@ export default function Home() {
   return (
     <Card>
       <CardContent>
-        <Formik>
+        <Formik initialValues={{
+          firstName: '',
+          lastName: '',
+          millionaire: false,
+          money: 0,
+          desription: ''
+        }}>
           <Form>
             <Field name='firstName' component={TextField} label='First Name' />
           </Form>
