@@ -8,6 +8,7 @@ export default function Home() {
     <Card>
       <CardContent>
         <Formik
+          validationSchema={object({})}
           initialValues={{
             firstName: '',
             lastName: '',
