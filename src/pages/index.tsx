@@ -12,7 +12,7 @@ export default function Home() {
           millionaire: false,
           money: 0,
           desription: ''
-        }}>
+        }} onSubmit={() => {}}>
           <Form>
             <Field name='firstName' component={TextField} label='First Name' />
           </Form>
