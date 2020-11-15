@@ -8,7 +8,12 @@ export default function Home() {
     <Card>
       <CardContent>
         <Formik
-          validationSchema={object({})}
+          validationSchema={object({
+            money: mixed().when('millionaire', {
+              is: true,
+              then: number().required().min(1000000)
+            })
+          })}
           initialValues={{
             firstName: '',
             lastName: '',
