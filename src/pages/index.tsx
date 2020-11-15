@@ -13,7 +13,7 @@ export default function Home() {
           money: 0,
           desription: ''
         }} onSubmit={() => {}}>
-          <Form>
+          <Form autoComplete='off'>
             <Field name='firstName' component={TextField} label='First Name' />
             <Field name='lastName' component={TextField} label='Last Name' />
             <Field name='millionaire' type='checkbox' component={CheckboxWithLabel} Label={{label: 'I am a millionaire'}} />
