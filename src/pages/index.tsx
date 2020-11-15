@@ -5,7 +5,9 @@ export default function Home() {
     <Card>
       <CardContent>
         <Formik>
-          <Form></Form>
+          <Form>
+            <Field></Field>
+          </Form>
         </Formik>
       </CardContent>
     </Card>
