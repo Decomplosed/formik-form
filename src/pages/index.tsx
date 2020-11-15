@@ -42,4 +42,4 @@ export default function Home() {
   );
 }
 
-export function FormikStepper(props: FormikConfig<FormikValues>) {}
+export function FormikStepper({children, ...props}: FormikConfig<FormikValues>) {}
