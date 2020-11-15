@@ -15,6 +15,7 @@ export default function Home() {
         }} onSubmit={() => {}}>
           <Form>
             <Field name='firstName' component={TextField} label='First Name' />
+            <Field name='lastName' component={TextField} label='Last Name' />
           </Form>
         </Formik>
       </CardContent>
