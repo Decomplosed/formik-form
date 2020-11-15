@@ -41,3 +41,5 @@ export default function Home() {
     </Card>
   );
 }
+
+export function FormikStepper(props: FormikConfig<FormikValues>) {}
