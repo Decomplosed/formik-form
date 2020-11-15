@@ -1,5 +1,5 @@
 import { Card, CardContent, Typography } from '@material-ui/core';
-import { Field, Form, Formik } from 'formik'
+import { Field, Form, Formik, FormikConfig, FormikValues } from 'formik'
 import { CheckboxWithLabel, TextField } from 'formik-material-ui'
 import { mixed, number, object } from 'yup';
 
