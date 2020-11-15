@@ -43,5 +43,9 @@ export default function Home() {
 }
 
 export function FormikStepper({children, ...props}: FormikConfig<FormikValues>) {
-  return <Formik {...props}></Formik>
+  return (
+    <Formik {...props}>
+      <Form>{children}</Form>
+    </Formik>
+  )
 }
