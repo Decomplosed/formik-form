@@ -45,7 +45,7 @@ export default function Home() {
 export function FormikStepper({children, ...props}: FormikConfig<FormikValues>) {
   return (
     <Formik {...props}>
-      <Form>{children}</Form>
+      <Form autoComplete='off'>{children}</Form>
     </Formik>
   )
 }
