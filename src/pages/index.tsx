@@ -73,7 +73,7 @@ export function FormikStepper({
 }: FormikConfig<FormikValues>) {
   const childrenArray = React.Children.toArray(children);
   const [step, setStep] = useState(0);
-  const currentChild = childrenArray[step]
+  const currentChild = childrenArray[step];
 
   return (
     <Formik {...props}>
