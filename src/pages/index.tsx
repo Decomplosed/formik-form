@@ -62,11 +62,13 @@ export default function Home() {
             </Box>
           </FormikStep>
           <FormikStep>
-            <Field
-              name='description'
-              component={TextField}
-              label='Description'
-            />
+            <Box paddingBottom={2}>
+              <Field
+                name='description'
+                component={TextField}
+                label='Description'
+              />
+            </Box>
           </FormikStep>
         </FormikStepper>
       </CardContent>
