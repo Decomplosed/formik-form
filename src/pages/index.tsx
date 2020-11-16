@@ -69,6 +69,10 @@ export function FormikStepper({
   const [step, setStep] = useState(0);
   const currentChild = childrenArray[step];
 
+  function isLastStep() {
+    return step === childrenArray.length - 1;
+  }
+
   return (
     <Formik
       {...props}
