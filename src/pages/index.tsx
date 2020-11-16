@@ -70,7 +70,16 @@ export function FormikStepper({
   const currentChild = childrenArray[step];
 
   return (
-    <Formik {...props}>
+    <Formik
+      {...props}
+      onSubmit={async (values, helpers) => {
+        if (step === childrenArray.length - 1) {
+          await props.onSubmit(values, helpers);
+        } else {
+          setStep((s) => s + 1);
+        }
+      }}
+    >
       <Form autoComplete='off'>
         {currentChild}
         {step > 0 ? (
