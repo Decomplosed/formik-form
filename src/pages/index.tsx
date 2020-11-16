@@ -26,7 +26,7 @@ export default function Home() {
             lastName: '',
             millionaire: false,
             money: 0,
-            desription: '',
+            description: '',
           }}
           onSubmit={() => {}}
         >
