@@ -72,6 +72,8 @@ export function FormikStepper({
   ...props
 }: FormikConfig<FormikValues>) {
   const childrenArray = React.Children.toArray(children);
+  const [step, setStep] = useState(0);
+
   return (
     <Formik {...props}>
       <Form autoComplete='off'>{children}</Form>
