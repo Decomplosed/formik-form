@@ -61,6 +61,8 @@ export default function Home() {
   );
 }
 
+export function FormikStep() {}
+
 export function FormikStepper({
   children,
   ...props
