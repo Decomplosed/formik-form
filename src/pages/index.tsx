@@ -76,6 +76,7 @@ export function FormikStepper({
         {step > 0 ? (
           <Button onClick={() => setStep((s) => s - 1)}>Back</Button>
         ) : null}
+        <Button>Next</Button>
       </Form>
     </Formik>
   );
