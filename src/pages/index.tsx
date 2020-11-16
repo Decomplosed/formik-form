@@ -30,7 +30,7 @@ export default function Home() {
           }}
           onSubmit={() => {}}
         >
-          <div>
+          <FormikStep>
             <Field name='firstName' component={TextField} label='First Name' />
             <Field name='lastName' component={TextField} label='Last Name' />
             <Field
@@ -39,22 +39,22 @@ export default function Home() {
               component={CheckboxWithLabel}
               Label={{ label: 'I am a millionaire' }}
             />
-          </div>
-          <div>
+          </FormikStep>
+          <FormikStep>
             <Field
               name='money'
               type='number'
               component={TextField}
               label='All the money I have'
             />
-          </div>
-          <div>
+          </FormikStep>
+          <FormikStep>
             <Field
               name='description'
               component={TextField}
               label='Description'
             />
-          </div>
+          </FormikStep>
         </FormikStepper>
       </CardContent>
     </Card>
