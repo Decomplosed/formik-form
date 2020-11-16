@@ -73,7 +73,7 @@ export function FormikStepper({
     <Formik {...props}>
       <Form autoComplete='off'>
         {currentChild}
-        <Button>Back</Button>
+        <Button onClick={() => setStep((s) => s - 1)}>Back</Button>
       </Form>
     </Formik>
   );
