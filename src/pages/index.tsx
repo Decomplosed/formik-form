@@ -19,14 +19,24 @@ export default function Home() {
           onSubmit={() => {}}
         >
           <FormikStep>
-            <Field name='firstName' component={TextField} label='First Name' />
-            <Field name='lastName' component={TextField} label='Last Name' />
-            <Field
-              name='millionaire'
-              type='checkbox'
-              component={CheckboxWithLabel}
-              Label={{ label: 'I am a millionaire' }}
-            />
+            <Box>
+              <Field
+                name='firstName'
+                component={TextField}
+                label='First Name'
+              />
+            </Box>
+            <Box>
+              <Field name='lastName' component={TextField} label='Last Name' />
+            </Box>
+            <Box>
+              <Field
+                name='millionaire'
+                type='checkbox'
+                component={CheckboxWithLabel}
+                Label={{ label: 'I am a millionaire' }}
+              />
+            </Box>
           </FormikStep>
           <FormikStep
             validationSchema={object({
