@@ -52,12 +52,14 @@ export default function Home() {
               }),
             })}
           >
-            <Field
-              name='money'
-              type='number'
-              component={TextField}
-              label='All the money I have'
-            />
+            <Box paddingBottom={2}>
+              <Field
+                name='money'
+                type='number'
+                component={TextField}
+                label='All the money I have'
+              />
+            </Box>
           </FormikStep>
           <FormikStep>
             <Field
