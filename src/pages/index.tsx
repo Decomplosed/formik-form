@@ -19,17 +19,17 @@ export default function Home() {
           onSubmit={() => {}}
         >
           <FormikStep>
-            <Box>
+            <Box paddingBottom={2}>
               <Field
                 name='firstName'
                 component={TextField}
                 label='First Name'
               />
             </Box>
-            <Box>
+            <Box paddingBottom={2}>
               <Field name='lastName' component={TextField} label='Last Name' />
             </Box>
-            <Box>
+            <Box paddingBottom={2}>
               <Field
                 name='millionaire'
                 type='checkbox'
