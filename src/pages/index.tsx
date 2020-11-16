@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Card>
       <CardContent>
-        <Formik
+        <FormikStepper
           validationSchema={object({
             money: mixed().when('millionaire', {
               is: true,
@@ -60,7 +60,7 @@ export default function Home() {
               />
             </div>
           </Form>
-        </Formik>
+        </FormikStepper>
       </CardContent>
     </Card>
   );
