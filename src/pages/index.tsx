@@ -61,7 +61,10 @@ export default function Home() {
   );
 }
 
-export function FormikStep({ children, ...props }) {}
+export function FormikStep({
+  children,
+  ...props
+}: FormikConfig<FormikValues>) {}
 
 export function FormikStepper({
   children,
