@@ -9,18 +9,6 @@ export default function Home() {
     <Card>
       <CardContent>
         <FormikStepper
-          validationSchema={object({
-            money: mixed().when('millionaire', {
-              is: true,
-              then: number()
-                .required()
-                .min(
-                  1_000_000,
-                  'Because you said you are a millionaire, you need to have at least 1 million',
-                ),
-              otherwise: number().required(),
-            }),
-          })}
           initialValues={{
             firstName: '',
             lastName: '',
@@ -40,7 +28,20 @@ export default function Home() {
               Label={{ label: 'I am a millionaire' }}
             />
           </FormikStep>
-          <FormikStep>
+          <FormikStep
+            validationSchema={object({
+              money: mixed().when('millionaire', {
+                is: true,
+                then: number()
+                  .required()
+                  .min(
+                    1_000_000,
+                    'Because you said you are a millionaire, you need to have at least 1 million',
+                  ),
+                otherwise: number().required(),
+              }),
+            })}
+          >
             <Field
               name='money'
               type='number'
