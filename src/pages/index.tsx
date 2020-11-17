@@ -121,9 +121,15 @@ export function FormikStepper({
       <Form autoComplete='off'>
         {currentChild}
         {step > 0 ? (
-          <Button onClick={() => setStep((s) => s - 1)}>Back</Button>
+          <Button
+            variant='contained'
+            color='primary'
+            onClick={() => setStep((s) => s - 1)}
+          >
+            Back
+          </Button>
         ) : null}
-        <Button color='primary' type='submit'>
+        <Button variant='contained' color='primary' type='submit'>
           {isLastStep() ? 'Submit' : 'Next'}
         </Button>
       </Form>
