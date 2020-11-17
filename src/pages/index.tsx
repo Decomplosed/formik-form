@@ -21,16 +21,23 @@ export default function Home() {
           <FormikStep>
             <Box paddingBottom={2}>
               <Field
+                fullWidth
                 name='firstName'
                 component={TextField}
                 label='First Name'
               />
             </Box>
             <Box paddingBottom={2}>
-              <Field name='lastName' component={TextField} label='Last Name' />
+              <Field
+                fullWidth
+                name='lastName'
+                component={TextField}
+                label='Last Name'
+              />
             </Box>
             <Box paddingBottom={2}>
               <Field
+                fullWidth
                 name='millionaire'
                 type='checkbox'
                 component={CheckboxWithLabel}
@@ -54,6 +61,7 @@ export default function Home() {
           >
             <Box paddingBottom={2}>
               <Field
+                fullWidth
                 name='money'
                 type='number'
                 component={TextField}
@@ -64,6 +72,7 @@ export default function Home() {
           <FormikStep>
             <Box paddingBottom={2}>
               <Field
+                fullWidth
                 name='description'
                 component={TextField}
                 label='Description'
