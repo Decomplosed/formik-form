@@ -144,7 +144,7 @@ export function FormikStepper({
             ))}
           </Stepper>
           {currentChild}
-          <Grid>
+          <Grid container>
             {step > 0 ? (
               <Button
                 disabled={isSubmitting}
