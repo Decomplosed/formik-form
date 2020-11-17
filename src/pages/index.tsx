@@ -128,28 +128,30 @@ export function FormikStepper({
         }
       }}
     >
-      <Form autoComplete='off'>
-        <Stepper alternativeLabel activeStep={step}>
-          {childrenArray.map((child) => (
-            <Step key={child.props.label}>
-              <StepLabel>{child.props.label}</StepLabel>
-            </Step>
-          ))}
-        </Stepper>
-        {currentChild}
-        {step > 0 ? (
-          <Button
-            variant='contained'
-            color='primary'
-            onClick={() => setStep((s) => s - 1)}
-          >
-            Back
+      {({ isSubmitting }) => (
+        <Form autoComplete='off'>
+          <Stepper alternativeLabel activeStep={step}>
+            {childrenArray.map((child) => (
+              <Step key={child.props.label}>
+                <StepLabel>{child.props.label}</StepLabel>
+              </Step>
+            ))}
+          </Stepper>
+          {currentChild}
+          {step > 0 ? (
+            <Button
+              variant='contained'
+              color='primary'
+              onClick={() => setStep((s) => s - 1)}
+            >
+              Back
+            </Button>
+          ) : null}
+          <Button variant='contained' color='primary' type='submit'>
+            {isLastStep() ? 'Submit' : 'Next'}
           </Button>
-        ) : null}
-        <Button variant='contained' color='primary' type='submit'>
-          {isLastStep() ? 'Submit' : 'Next'}
-        </Button>
-      </Form>
+        </Form>
+      )}
     </Formik>
   );
 }
