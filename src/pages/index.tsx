@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import { Card, CardContent, Button, Box, Stepper, Step, StepLabel } from '@material-ui/core';
+import {
+  Card,
+  CardContent,
+  Button,
+  Box,
+  Stepper,
+  Step,
+  StepLabel,
+} from '@material-ui/core';
 import { Field, Form, Formik, FormikConfig, FormikValues } from 'formik';
 import { CheckboxWithLabel, TextField } from 'formik-material-ui';
 import { mixed, number, object } from 'yup';
@@ -119,11 +127,11 @@ export function FormikStepper({
     >
       <Form autoComplete='off'>
         <Stepper alternativeLabel activeStep={step}>
-          {childrenArray.map(label) => (
+          {childrenArray.map((label) => (
             <Step key={label}>
               <StepLabel>{label}</StepLabel>
             </Step>
-          )}
+          ))}
         </Stepper>
         {currentChild}
         {step > 0 ? (
