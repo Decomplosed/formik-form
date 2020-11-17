@@ -118,7 +118,7 @@ export function FormikStepper({
       }}
     >
       <Form autoComplete='off'>
-        <Stepper></Stepper>
+        <Stepper alternativeLabel activeStep={}></Stepper>
         {currentChild}
         {step > 0 ? (
           <Button
