@@ -143,24 +143,26 @@ export function FormikStepper({
             ))}
           </Stepper>
           {currentChild}
-          {step > 0 ? (
+          <Grid>
+            {step > 0 ? (
+              <Button
+                disabled={isSubmitting}
+                variant='contained'
+                color='primary'
+                onClick={() => setStep((s) => s - 1)}
+              >
+                Back
+              </Button>
+            ) : null}
             <Button
               disabled={isSubmitting}
               variant='contained'
               color='primary'
-              onClick={() => setStep((s) => s - 1)}
+              type='submit'
             >
-              Back
+              {isSubmitting ? 'Submitting' : isLastStep() ? 'Submit' : 'Next'}
             </Button>
-          ) : null}
-          <Button
-            disabled={isSubmitting}
-            variant='contained'
-            color='primary'
-            type='submit'
-          >
-            {isSubmitting ? 'Submitting' : isLastStep() ? 'Submit' : 'Next'}
-          </Button>
+          </Grid>
         </Form>
       )}
     </Formik>
