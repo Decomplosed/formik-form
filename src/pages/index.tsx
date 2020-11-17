@@ -26,7 +26,7 @@ export default function Home() {
             money: 0,
             description: '',
           }}
-          onSubmit={() => {}}
+          onSubmit={async () => {}}
         >
           <FormikStep label='Personal Data'>
             <Box paddingBottom={2}>
