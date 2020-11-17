@@ -28,6 +28,7 @@ export default function Home() {
           }}
           onSubmit={async (values) => {
             await sleep(3000);
+            console.log('values', values);
           }}
         >
           <FormikStep label='Personal Data'>
