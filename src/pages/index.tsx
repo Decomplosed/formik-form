@@ -154,7 +154,7 @@ export function FormikStepper({
             color='primary'
             type='submit'
           >
-            {isLastStep() ? 'Submit' : 'Next'}
+            {isSubmitting ? 'Submitting' : isLastStep() ? 'Submit' : 'Next'}
           </Button>
         </Form>
       )}
