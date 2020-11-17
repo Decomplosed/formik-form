@@ -121,6 +121,7 @@ export function FormikStepper({
         <Stepper alternativeLabel activeStep={step}>
           {childrenArray.map(label) => (
             <Step key={label}>
+              <StepLabel>{label}</StepLabel>
             </Step>
           )}
         </Stepper>
