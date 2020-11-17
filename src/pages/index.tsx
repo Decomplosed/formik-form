@@ -146,7 +146,7 @@ export function FormikStepper({
           {currentChild}
           <Grid container spacing={2}>
             {step > 0 ? (
-              <Grid>
+              <Grid item>
                 <Button
                   disabled={isSubmitting}
                   variant='contained'
