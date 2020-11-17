@@ -147,7 +147,12 @@ export function FormikStepper({
               Back
             </Button>
           ) : null}
-          <Button variant='contained' color='primary' type='submit'>
+          <Button
+            disabled={isSubmitting}
+            variant='contained'
+            color='primary'
+            type='submit'
+          >
             {isLastStep() ? 'Submit' : 'Next'}
           </Button>
         </Form>
