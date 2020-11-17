@@ -118,9 +118,9 @@ export function FormikStepper({
       }}
     >
       <Form autoComplete='off'>
-        <Stepper alternativeLabel activeStep={}>
+        <Stepper alternativeLabel activeStep={step}>
           {childrenArray.map(label) => (
-            
+
           )}
         </Stepper>
         {currentChild}
