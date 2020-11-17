@@ -93,7 +93,9 @@ export default function Home() {
 }
 
 export interface FormikStepProps
-  extends Pick<FormikConfig<FormikValues>, 'children' | 'validationSchema'> {}
+  extends Pick<FormikConfig<FormikValues>, 'children' | 'validationSchema'> {
+  label: string;
+}
 
 export function FormikStep({ children, ...props }: FormikStepProps) {
   return <>{children}</>;
