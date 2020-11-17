@@ -123,7 +123,9 @@ export function FormikStepper({
         {step > 0 ? (
           <Button onClick={() => setStep((s) => s - 1)}>Back</Button>
         ) : null}
-        <Button type='submit'>{isLastStep() ? 'Submit' : 'Next'}</Button>
+        <Button color='primary' type='submit'>
+          {isLastStep() ? 'Submit' : 'Next'}
+        </Button>
       </Form>
     </Formik>
   );
