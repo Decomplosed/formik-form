@@ -26,7 +26,7 @@ export default function Home() {
           }}
           onSubmit={() => {}}
         >
-          <FormikStep>
+          <FormikStep label='Personal Data'>
             <Box paddingBottom={2}>
               <Field
                 fullWidth
@@ -53,6 +53,7 @@ export default function Home() {
             </Box>
           </FormikStep>
           <FormikStep
+            label='Bank accounts'
             validationSchema={object({
               money: mixed().when('millionaire', {
                 is: true,
@@ -76,7 +77,7 @@ export default function Home() {
               />
             </Box>
           </FormikStep>
-          <FormikStep>
+          <FormikStep label='More info'>
             <Box paddingBottom={2}>
               <Field
                 fullWidth
