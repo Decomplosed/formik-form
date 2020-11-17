@@ -140,6 +140,7 @@ export function FormikStepper({
           {currentChild}
           {step > 0 ? (
             <Button
+              disabled={isSubmitting}
               variant='contained'
               color='primary'
               onClick={() => setStep((s) => s - 1)}
