@@ -157,7 +157,7 @@ export function FormikStepper({
                 </Button>
               </Grid>
             ) : null}
-            <Grid>
+            <Grid item>
               <Button
                 disabled={isSubmitting}
                 variant='contained'
