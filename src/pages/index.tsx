@@ -146,14 +146,16 @@ export function FormikStepper({
           {currentChild}
           <Grid container spacing={2}>
             {step > 0 ? (
-              <Button
-                disabled={isSubmitting}
-                variant='contained'
-                color='primary'
-                onClick={() => setStep((s) => s - 1)}
-              >
-                Back
-              </Button>
+              <Grid>
+                <Button
+                  disabled={isSubmitting}
+                  variant='contained'
+                  color='primary'
+                  onClick={() => setStep((s) => s - 1)}
+                >
+                  Back
+                </Button>
+              </Grid>
             ) : null}
             <Button
               disabled={isSubmitting}
