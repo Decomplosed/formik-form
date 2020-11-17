@@ -157,14 +157,16 @@ export function FormikStepper({
                 </Button>
               </Grid>
             ) : null}
-            <Button
-              disabled={isSubmitting}
-              variant='contained'
-              color='primary'
-              type='submit'
-            >
-              {isSubmitting ? 'Submitting' : isLastStep() ? 'Submit' : 'Next'}
-            </Button>
+            <Grid>
+              <Button
+                disabled={isSubmitting}
+                variant='contained'
+                color='primary'
+                type='submit'
+              >
+                {isSubmitting ? 'Submitting' : isLastStep() ? 'Submit' : 'Next'}
+              </Button>
+            </Grid>
           </Grid>
         </Form>
       )}
