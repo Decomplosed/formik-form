@@ -161,6 +161,7 @@ export function FormikStepper({
             ) : null}
             <Grid item>
               <Button
+                startIcon={}
                 disabled={isSubmitting}
                 variant='contained'
                 color='primary'
