@@ -130,6 +130,7 @@ export function FormikStepper({
       onSubmit={async (values, helpers) => {
         if (isLastStep()) {
           await props.onSubmit(values, helpers);
+          setCompleted(true);
         } else {
           setStep((s) => s + 1);
         }
