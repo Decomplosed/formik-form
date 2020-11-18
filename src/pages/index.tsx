@@ -162,7 +162,9 @@ export function FormikStepper({
             ) : null}
             <Grid item>
               <Button
-                startIcon={}
+                startIcon={
+                  isSubmitting ? <CircularProgress size='1rem' /> : null
+                }
                 disabled={isSubmitting}
                 variant='contained'
                 color='primary'
