@@ -141,7 +141,7 @@ export function FormikStepper({
         <Form autoComplete='off'>
           <Stepper alternativeLabel activeStep={step}>
             {childrenArray.map((child) => (
-              <Step key={child.props.label}>
+              <Step key={child.props.label} completed={}>
                 <StepLabel>{child.props.label}</StepLabel>
               </Step>
             ))}
